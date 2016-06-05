@@ -351,26 +351,53 @@ body {
 
 #logo {
     margin: 0 auto;
-    img {
-      float: left;
-    }
-    .first-row {
-        position: relative;
-        height: 280px;
+    .pic {
+        height: 200px;
+        display: block;
+        text-align: center;
     }
     h1 {
         @include logo-font;
         font-size: 5em;
-        position: absolute;
-        left: 200px;
-        bottom: 80px;
     }
     h2 {
         @include logo-font;
         font-size: 3em;
-        position: absolute;
-        left: 200px;
-        bottom: 40px;
     }
     .clear { clear: both; }
+
+    @media (max-width: 767px) {
+        .pic {
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        img { float: left; }
+
+        .first-row {
+            position: relative;
+            height: 280px;
+        }
+
+        .text {
+          text-align: left;
+          position: relative;
+          height: 280px;
+        }
+
+        h1 {
+            bottom: 80px;
+            position: absolute;
+        }
+
+        h2 {
+            bottom: 40px;
+            position: absolute;
+        }
+    }
 }
