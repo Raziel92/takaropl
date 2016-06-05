@@ -64,3 +64,9 @@
 {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@mixin logo-font()
+{
+	font-family: 'Acme', 'Helvetica Neue', Arial, sans-serif;
+  color: #f26822;
+}

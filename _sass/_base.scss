@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/background2.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -349,3 +349,28 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+#logo {
+    margin: 0 auto;
+    img {
+      float: left;
+    }
+    .first-row {
+        position: relative;
+        height: 280px;
+    }
+    h1 {
+        @include logo-font;
+        font-size: 5em;
+        position: absolute;
+        left: 200px;
+        bottom: 80px;
+    }
+    h2 {
+        @include logo-font;
+        font-size: 3em;
+        position: absolute;
+        left: 200px;
+        bottom: 40px;
+    }
+    .clear { clear: both; }
+}
