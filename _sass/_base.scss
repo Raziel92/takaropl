@@ -70,11 +70,9 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
-    background-image: url('../img/background3.jpg');
+    background-color: black;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
-    @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
@@ -110,13 +108,13 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
-        border-color: rgba(white, .3);
+        background-color: black;
+        border-color: black;
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: $theme-primary;
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         .nav > li > a,
@@ -127,7 +125,7 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
+            background-color: black;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
@@ -150,10 +148,15 @@ aside {
 
 // Homepage Header
 
-table.prices {
-    margin: 0 auto;
+.prices-page {
     position: relative;
-    top: 100px;
+    top: 50px;
+}
+
+table.prices {
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
     min-height: auto;
     width: 600px;
     margin-bottom: 100px;
@@ -166,7 +169,7 @@ table.prices {
     }
 
     tr td {
-        padding-bottom: 0.4em;
+        padding-bottom: 1em;
         text-align: center;
     }
 
@@ -342,7 +345,7 @@ header {
 }
 
 // Contact
-#contact .fa {
+#kontakt .fa {
     color: $theme-dark;
     font-size: 4em;
 }
