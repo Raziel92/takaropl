@@ -71,6 +71,7 @@ aside {
 
 .navbar-default {
     background-color: white;
+    background-image: url('../img/background3.jpg');
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -149,13 +150,38 @@ aside {
 
 // Homepage Header
 
+table.prices {
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    min-height: auto;
+    width: 600px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+
+    tr th {
+        font-size: 1.2em;
+        padding-bottom: 1.4em;
+        text-align: center;
+    }
+
+    tr td {
+        padding-bottom: 0.4em;
+        text-align: center;
+    }
+
+    tr td:first-child, tr th:first-child {
+      text-align: left;
+    }
+}
+
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/background2.jpg');
+    background-image: url('../img/background3.jpg');
     text-align: center;
     color: white;
     .header-content {
